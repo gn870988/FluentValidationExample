@@ -20,7 +20,7 @@ namespace FluentValidationExample.Controllers
         {
             if (ModelState.IsValid)
             {
-                // To do your application logic
+                // to do your application logic
             }
 
             return View(data);
