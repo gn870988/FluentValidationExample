@@ -13,7 +13,7 @@ namespace FluentValidationExample.Validation
             CascadeMode = CascadeMode.StopOnFirstFailure;
 
             RuleFor(u => u.Name)
-                .NotEmpty().WithName("姓名").WithMessage("{PropertyName} 必須輸入值");
+                .NotEmpty().WithMessage("{PropertyName} 必須輸入值");
 
             RuleFor(u => u.Email)
                 .NotEmpty().WithMessage("{PropertyName} 必須輸入值")

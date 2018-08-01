@@ -5,6 +5,7 @@ namespace FluentValidationExample.Models
 {
     public class User
     {
+        [Display(Name = "姓名")]
         public string Name { get; set; }
 
         [Display(Name = "信箱")]
