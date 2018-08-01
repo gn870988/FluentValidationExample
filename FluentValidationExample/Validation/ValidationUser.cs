@@ -16,7 +16,7 @@ namespace FluentValidationExample.Validation
                 .NotEmpty().WithName("姓名").WithMessage("{PropertyName} 必須輸入值");
 
             RuleFor(u => u.Email)
-                .NotEmpty().WithName("信箱").WithMessage("{PropertyName} 必須輸入值")
+                .NotEmpty().WithMessage("{PropertyName} 必須輸入值")
                 .EmailAddress().WithMessage("{PropertyName} 請填寫正確");
 
             // 如果邏輯太複雜可用Must拆出來，例如檢查身分證居留證等
